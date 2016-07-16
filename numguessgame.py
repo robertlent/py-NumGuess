@@ -40,6 +40,10 @@ def main():
             return
         else:
             print("Wrong!")
+            if guess < r:
+                print ("\nYour guess was too low!")
+            else:
+                print ("\nYour guess was too high!")
     else:
         print("\nYou lose. The number was: %s" % r)
         new_game()
